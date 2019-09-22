@@ -1,0 +1,67 @@
+html, body {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: Tahoma, Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.flex-wrap {
+	display: flex;
+	justify-content: space-around;
+}
+
+section {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+a {
+	color: gray;
+}
+
+section:nth-child(n+2) {
+	border-bottom: 1px solid lightgray;
+}
+
+ul {
+	line-height: 1.5em;
+	list-style: none;
+	padding-left: 10px;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 230px;
+}
+
+header h1 {
+	font-size: 40px;
+	font-weight: 500;
+	align-self: center;
+}
+
+header .name-and-photo {
+	display: flex;
+	justify-content: space-around;
+}
+
+header .name-and-photo img {
+	margin-left: 55px;
+	height: 200px;
+}
+
+/*section contacts and summary */
+
+.contacts {
+	display: flex;
+	width: 50%;
+	justify-content: space-between;
+}
+
+.summary {
+	width: 35%;
+}
+/* /section contacts and summary */
+
